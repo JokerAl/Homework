@@ -1,0 +1,54 @@
+@import '../utils/_variables';
+.button {
+  display: inline-block;
+  background-color: black;
+  padding: 15px 20px;
+  color: white;
+  font-family: Novecentowide,sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: (14/16)*1rem;
+  &:hover {
+    color: #00A8EF;
+  }
+}
+button[type="submit"] {
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: #828282;
+  padding: 10px 15px;
+  border: none;
+  color: white;
+  margin-left: 5px;
+}
+.social-icon {
+  text-align: center;
+  li {
+    display: inline-block;
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+    a {
+      display: block;
+      border-radius: 50%;
+      color: white;
+      background-color: black;
+      width: 34px;
+      height: 34px;
+      position: relative;
+      &:before {
+        font-size: (18/20)*1rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &:hover {
+        &:before {
+          color: $link_hover-color;
+        }
+      }
+    }
+  }
+}
+
